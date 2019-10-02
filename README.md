@@ -1,6 +1,7 @@
 # Chart
 Donut chart
 ### 自己在工作中遇到了自定义chart ，所以写了一个自定义view
+aar下载链接： https://github.com/tobecrazy/Chart/blob/master/Chart-release-v1.1.aar 
 
 ### 如何使用
 
