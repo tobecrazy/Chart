@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChartView">
+        <attr name="chart_progress_value" format="integer" />
+        <attr name="chart_progress_max_value" format="integer" />
+        <attr name="chart_circle_background_color" format="color" />
+        <attr name="chart_circle_progress_color" format="color" />
+        <attr name="chart_divider_text" format="string" />
+        <attr name="chart_textSize" format="dimension" />
+        <attr name="chart_textColor" format="color" />
+        <attr name="chart_isAnimation" format="boolean" />
+        <attr name="chart_interval" format="integer" />
+    </declare-styleable>
+</resources>
