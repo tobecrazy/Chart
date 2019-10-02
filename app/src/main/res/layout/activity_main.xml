@@ -4,19 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <cn.dbyl.chart.DonutChart
         android:id="@+id/donut_chart_view"
-        android:layout_margin="50dp"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_gravity="center"
+        android:layout_margin="50dp"
         app:chart_circle_background_color="@color/gray"
         app:chart_circle_progress_color="@color/red"
-        app:chart_isAnimation="true"
+        app:chart_isAnimation="false"
         app:chart_progress_max_value="100"
-        app:chart_progress_value="86"
+        app:chart_progress_value="0"
         app:chart_textColor="@color/black"
         app:chart_textSize="20sp" />
+
+    <Button
+        android:layout_margin="50dp"
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click To Start" />
 </LinearLayout>
