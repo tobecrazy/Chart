@@ -22,9 +22,14 @@
         app:chart_textSize="20sp" />
 
     <Button
-        android:layout_margin="50dp"
         android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="50dp"
         android:text="Click To Start" />
+
+    <cn.dbyl.chartdemo.MyView
+        android:background="@color/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>
