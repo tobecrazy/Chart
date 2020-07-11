@@ -21,11 +21,12 @@
         app:chart_textColor="@color/black"
         app:chart_textSize="20sp" />
 
-    <Button
+    <ImageButton
         android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="50dp"
+        android:background="@drawable/ic_launcher_foreground"
         android:text="Click To Start" />
 
     <cn.dbyl.chartdemo.MyView

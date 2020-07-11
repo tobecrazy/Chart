@@ -15,5 +15,6 @@ class MainActivity : AppCompatActivity() {
             donut_chart_view.isAnimation=true
             donut_chart_view.interval=3000
         }
+        start.contentDescription="Start"
     }
 }

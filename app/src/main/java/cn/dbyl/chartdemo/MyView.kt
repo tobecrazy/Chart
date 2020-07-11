@@ -13,7 +13,7 @@ import android.view.View
 class MyView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
-
+    var paint: Paint = Paint()
     companion object {
         const val TAG: String = "MyView"
     }
@@ -37,13 +37,18 @@ class MyView @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
         Log.v(TAG, "onDraw")
-        var paint: Paint = Paint()
         paint.style=Paint.Style.FILL
         paint.strokeWidth=20f
         paint.color = context.getColor(R.color.blue)
         canvas?.translate(400f, 50f)
         canvas?.drawCircle(200f, 200f, 200f, paint)
+    }
 
-
+    override fun getContentDescription(): CharSequence {
+        if (paint.textSize>16)
+        {
+            return " "
+        }
+        return super.getContentDescription()
     }
 }
