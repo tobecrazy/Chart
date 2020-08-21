@@ -1,5 +1,6 @@
 package cn.dbyl.chartdemo
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Paint
@@ -44,6 +45,7 @@ class MyView @JvmOverloads constructor(
         canvas?.drawCircle(200f, 200f, 200f, paint)
     }
 
+    @SuppressLint("GetContentDescriptionOverride")
     override fun getContentDescription(): CharSequence {
         if (paint.textSize>16)
         {

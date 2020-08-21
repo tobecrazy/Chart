@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "474552535774",
+    "firebase_url": "https://chart-486a5.firebaseio.com",
+    "project_id": "chart-486a5",
+    "storage_bucket": "chart-486a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474552535774:android:512793facba4d68c76504f",
+        "android_client_info": {
+          "package_name": "cn.dbyl.chartdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474552535774-rg5eajj4sl3aed28qcj7o96o8kmtlvst.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cn.dbyl.chartdemo",
+            "certificate_hash": "4e5d5f3d7bc984ad348d916efa95cf3052c4e6eb"
+          }
+        },
+        {
+          "client_id": "474552535774-84qpomr0qri71s5aaa589rb2gedu0cl9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxp71RPX7yBDXllh51va76U0-nCvmPNaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474552535774-84qpomr0qri71s5aaa589rb2gedu0cl9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
