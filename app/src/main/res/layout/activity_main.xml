@@ -7,30 +7,64 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <cn.dbyl.chart.DonutChart
-        android:id="@+id/donut_chart_view"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_gravity="center"
-        android:layout_margin="50dp"
-        app:chart_circle_background_color="@color/gray"
-        app:chart_circle_progress_color="@color/red"
-        app:chart_isAnimation="false"
-        app:chart_progress_max_value="100"
-        app:chart_progress_value="0"
-        app:chart_textColor="@color/black"
-        app:chart_textSize="20sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="50dp"
-        android:background="@drawable/common_google_signin_btn_icon_dark"
-        android:text="Click To Start" />
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexWrap="wrap">
 
-    <cn.dbyl.chartdemo.MyView
-        android:background="@color/yellow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            <cn.dbyl.chart.DonutChart
+                android:id="@+id/donut_chart_view"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="50dp"
+                app:chart_circle_background_color="@color/gray"
+                app:chart_circle_progress_color="@color/red"
+                app:chart_isAnimation="false"
+                app:chart_progress_max_value="100"
+                app:chart_progress_value="0"
+                app:chart_textColor="@color/black"
+                app:chart_textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:background="@drawable/common_google_signin_btn_icon_dark"
+                android:text="Click To Start" />
+
+            <cn.dbyl.chartdemo.MyView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow" />
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:text="@string/com.crashlytics.android.build_id"
+                app:layout_flexBasisPercent="50%" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="@string/common_google_play_services_install_text"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:text="@string/common_google_play_services_enable_button"
+                app:layout_alignSelf="flex_end" />
+        </com.google.android.flexbox.FlexboxLayout>
+    </ScrollView>
 </LinearLayout>
