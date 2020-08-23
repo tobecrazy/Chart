@@ -9,8 +9,6 @@ apply plugin: 'com.google.firebase.crashlytics'
 // Apply the Performance Monitoring plugin
 apply plugin: 'com.google.firebase.firebase-perf'
 
-apply plugin: 'com.didi.dokit'
-
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -70,6 +68,5 @@ dependencies {
     // Add the dependency for the Performance Monitoring library
     implementation 'com.google.firebase:firebase-perf:19.0.8'
     implementation 'com.google.android:flexbox:2.0.1'
-    debugImplementation "com.didichuxing.doraemonkit:doraemonkit:3.2.0"
-    releaseImplementation "com.didichuxing.doraemonkit:doraemonkit-no-op:3.2.0"
+
 }

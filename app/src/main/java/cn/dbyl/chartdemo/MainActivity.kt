@@ -4,6 +4,7 @@ package cn.dbyl.chartdemo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.Gravity
 import android.view.ViewGroup
 import android.widget.Button
 import com.google.firebase.crashlytics.FirebaseCrashlytics
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             FirebaseCrashlytics.getInstance()
                 .recordException(ExceptionInInitializerError("Crashed OPS！"))
         }
-
+        crashButton.gravity= Gravity.CENTER
         addContentView(
             crashButton, ViewGroup.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
